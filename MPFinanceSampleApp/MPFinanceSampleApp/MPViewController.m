@@ -7,6 +7,7 @@
 //
 
 #import "MPViewController.h"
+#import "MPFinanceUtilities.h"
 
 @interface MPViewController ()
 
@@ -24,6 +25,24 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)inflateButtonTapped:(id)sender {
+    double presentValue = [self.initialAmountTextField.text doubleValue];
+    // We divide by 100 because the user is unlikely to enter the interest rate as a decimal
+    double interestRatePerPeriod = [self.annualInterestRateTextField.text doubleValue] / 100;
+    double periods = [self.yearsTextField.text doubleValue];
+    
+    self.resultLabel.text = [NSString stringWithFormat:@"%.2f", MPInflate(presentValue, interestRatePerPeriod, periods)];
+}
+
+- (IBAction)deflateButtonTapped:(id)sender {
+    double presentValue = [self.initialAmountTextField.text doubleValue];
+    // We divide by 100 because the user is unlikely to enter the interest rate as a decimal
+    double interestRatePerPeriod = [self.annualInterestRateTextField.text doubleValue] / 100;
+    double periods = [self.yearsTextField.text doubleValue];
+    
+    self.resultLabel.text = [NSString stringWithFormat:@"%.2f", MPDeflate(presentValue, interestRatePerPeriod, periods)];
 }
 
 @end

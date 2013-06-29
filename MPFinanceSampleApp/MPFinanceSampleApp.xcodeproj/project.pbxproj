@@ -22,6 +22,8 @@
 		21A1D9B8177F46B4006D8CEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A1D997177F46B4006D8CEA /* UIKit.framework */; };
 		21A1D9C0177F46B4006D8CEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21A1D9BE177F46B4006D8CEA /* InfoPlist.strings */; };
 		21A1D9C2177F46B4006D8CEA /* MPFinanceSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D9C1177F46B4006D8CEA /* MPFinanceSampleAppTests.m */; };
+		21A1D9E4177F4962006D8CEA /* MPFinanceUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D9E3177F4962006D8CEA /* MPFinanceUtilities.m */; };
+		21A1D9E5177F4962006D8CEA /* MPFinanceUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D9E3177F4962006D8CEA /* MPFinanceUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		21A1D9BD177F46B4006D8CEA /* MPFinanceSampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MPFinanceSampleAppTests-Info.plist"; sourceTree = "<group>"; };
 		21A1D9BF177F46B4006D8CEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		21A1D9C1177F46B4006D8CEA /* MPFinanceSampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPFinanceSampleAppTests.m; sourceTree = "<group>"; };
+		21A1D9E2177F4962006D8CEA /* MPFinanceUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFinanceUtilities.h; sourceTree = "<group>"; };
+		21A1D9E3177F4962006D8CEA /* MPFinanceUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFinanceUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		21A1D999177F46B4006D8CEA /* MPFinanceSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				21A1D9CB177F47A1006D8CEA /* MPFinance */,
 				21A1D9A2177F46B4006D8CEA /* MPAppDelegate.h */,
 				21A1D9A3177F46B4006D8CEA /* MPAppDelegate.m */,
 				21A1D9A5177F46B4006D8CEA /* Main_iPhone.storyboard */,
@@ -153,6 +158,16 @@
 				21A1D9BE177F46B4006D8CEA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21A1D9CB177F47A1006D8CEA /* MPFinance */ = {
+			isa = PBXGroup;
+			children = (
+				21A1D9E2177F4962006D8CEA /* MPFinanceUtilities.h */,
+				21A1D9E3177F4962006D8CEA /* MPFinanceUtilities.m */,
+			);
+			name = MPFinance;
+			path = ../../MPFinance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +271,7 @@
 			files = (
 				21A1D9A0177F46B4006D8CEA /* main.m in Sources */,
 				21A1D9AD177F46B4006D8CEA /* MPViewController.m in Sources */,
+				21A1D9E4177F4962006D8CEA /* MPFinanceUtilities.m in Sources */,
 				21A1D9A4177F46B4006D8CEA /* MPAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A1D9C2177F46B4006D8CEA /* MPFinanceSampleAppTests.m in Sources */,
+				21A1D9E5177F4962006D8CEA /* MPFinanceUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
